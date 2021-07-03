@@ -1,4 +1,4 @@
-package com.gaurav.favdish.ui.notifications
+package com.gaurav.favdish.view.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.gaurav.favdish.R
 import com.gaurav.favdish.databinding.FragmentNotificationsBinding
+import com.gaurav.favdish.viewmodel.notifications.NotificationsViewModel
 
 class NotificationsFragment : Fragment() {
 

@@ -1,4 +1,4 @@
-package com.gaurav.favdish
+package com.gaurav.favdish.view.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.os.Looper
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import com.gaurav.favdish.R
 import com.gaurav.favdish.databinding.ActivitySplashBinding
 
 
@@ -21,7 +22,7 @@ class Splash : AppCompatActivity() {
 
         val splashAnimation = AnimationUtils.loadAnimation(this, R.anim.anim_splash)
         splashAnimation.fillAfter = true
-        binding.tvTest.animation = splashAnimation
+        binding.imageView.animation = splashAnimation
 
         splashAnimation.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation?) {}

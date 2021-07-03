@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_add_dishes">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.gaurav.favdish.ui.home.HomeFragment"
+        android:id="@+id/navigation_add_dishes"
+        android:name="com.gaurav.favdish.view.fragments.AllDishesFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_add_dishes" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.gaurav.favdish.ui.dashboard.DashboardFragment"
+        android:name="com.gaurav.favdish.view.fragments.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.gaurav.favdish.ui.notifications.NotificationsFragment"
+        android:name="com.gaurav.favdish.view.fragments.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
